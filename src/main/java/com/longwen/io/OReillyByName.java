@@ -1,6 +1,5 @@
 package com.longwen.io;
 
-import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -10,10 +9,12 @@ public class OReillyByName {
 		// TODO Auto-generated method stub
 		try {
 			
-			InetAddress ia= InetAddress.getByName("www.oreilly.com");
+			InetAddress ia= InetAddress.getByName("www.google.com.hk");
 			
-			System.out.println(ia.getCanonicalHostName());
-			System.out.println(ia.isReachable(3000));
+			System.out.println(ia.getHostAddress());
+			
+			
+			//System.out.println(ia.isReachable(3000));
 			/*byte[] bytes=InetAddress.getLocalHost().getAddress();
 			for(byte b:bytes){
 				System.out.println((int)b);
